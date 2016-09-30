@@ -74,7 +74,7 @@ lsb-release
 >openrc haveged-openrc
 >systemd haveged
 manjaro-firmware
-netrunner-release
+nurunner-release
 memtest86+
 mkinitcpio-nfs-utils
 >multilib lib32-mesa  # Optional dependency for mhwd

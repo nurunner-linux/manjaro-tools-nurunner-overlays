@@ -73,7 +73,7 @@ svn
 yaourt
 
 ## Netrunner repository packages
-audacious-winamp-theme
+# audacious-winamp-theme
 aurorae-theme-carbon
 aurorae-theme-forman
 aurorae-theme-gnome3
@@ -91,17 +91,16 @@ gmusicbrowser-netrunner
 google-talkplugin
 kcm-plasma-services
 kinfocenter
-netrunner-settings-firefox
-netrunner-artwork-skype
-netrunner-settings-thunderbird
-# netrunner-flattr-icons
-# netrunner-moka-icons
-netrunner-rolling-default-settings
-netrunner-wallpapers-extrapack-1
-netrunner-wallpapers-extrapack-2
-netrunner-wallpapers-extrapack-arti-one
+nurunner-settings-firefox
+# nurunner-settings-thunderbird
+# nurunner-flattr-icons
+# nurunner-moka-icons
+nurunner-default-settings
+nurunner-wallpapers-extrapack
+# netrunner-wallpapers-extrapack-2
+# netrunner-wallpapers-extrapack-arti-one
 # netrunner-welcome
-netrunner-windows-cursors
+# netrunner-windows-cursors
 perl-glib-object-introspection
 perl-gtk2-appindicator
 perl-gtk2-notify
@@ -115,6 +114,24 @@ vokoscreen
 zramswap
 
 nurunner-lnf-theme
+desktop-theme-blackx
+desktop-theme-bluex
+nurunner-system-settings
+nurunner-desktop-containment
+nurunner-desktop-panel
+nurunner-desktop-theme
+nurunner-wallpapers
+nurunner-whiteclassicia-cursors
+nurunner-welcome
+
+qt5-translations
+firefox-kde-i18n-en-us
+thunderbird-i18n-en-us
+aspell-en
+gimp-help-en
+hunspell-en
+hyphen-en
+
 
 ## Fonts
 noto-fonts  # default font
@@ -136,7 +153,7 @@ kmahjongg
 
 ## Package management
 octopi
-discover
+octopi-notifier-frameworks
 
 ## Java
 jdk8-openjdk
@@ -189,7 +206,7 @@ systemsettings
 
 ## Themes
 gnome-icon-theme
->systemd plymouth-theme-netrunner
+>systemd nurunner-plymouth-theme
 
 ## GTK Themes
 breeze-gtk
