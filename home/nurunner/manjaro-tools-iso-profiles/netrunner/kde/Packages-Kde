@@ -72,7 +72,7 @@ patchutils
 svn
 yaourt
 
-## Netrunner repository packages
+## Nurunner repository packages
 # audacious-winamp-theme
 aurorae-theme-carbon
 aurorae-theme-forman
@@ -123,7 +123,10 @@ nurunner-desktop-theme
 nurunner-wallpapers
 nurunner-whiteclassicia-cursors
 nurunner-welcome
+nurunner-kicker-menu
+## Nurunner repository packages
 
+##Nurunner adds
 qt5-translations
 firefox-kde-i18n-en-us
 thunderbird-i18n-en-us
@@ -131,6 +134,8 @@ aspell-en
 gimp-help-en
 hunspell-en
 hyphen-en
+inkscape
+## End Nurunner adds
 
 
 ## Fonts
@@ -338,7 +343,7 @@ libreoffice-fresh
 #calligra-filters
 #calligra-flow
 #calligra-handbook
-calligra-karbon
+#calligra-karbon
 #calligra-kexi
 #calligra-plan
 #calligra-plugins
