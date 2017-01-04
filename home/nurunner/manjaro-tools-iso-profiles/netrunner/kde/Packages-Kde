@@ -5,6 +5,7 @@
 ## Network
 >systemd networkmanager
 >openrc networkmanager-openrc
+>openrc networkmanager-consolekit
 networkmanager-dispatcher-ntpd
 >systemd openresolv
 openssh
@@ -32,7 +33,12 @@ manjaro-pulse
 pavucontrol
 phonon-qt5-gstreamer
 phonon-qt4-gstreamer
+pyqt5-common # For hplip
+python-pillow # For hplip
+python-pip # For hplip
 python-pyqt4  # For pulseaudio gui
+python-pyqt5  # For hplip gui
+python-reportlab # For hplip
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
@@ -87,11 +93,11 @@ desktop-theme-eclipse
 # desktop-theme-orange-lighteneng
 # desktop-theme-sevenfield
 gltron
-gmusicbrowser-netrunner
 google-talkplugin
 kcm-plasma-services
 kinfocenter
 nurunner-settings-firefox
+nurunner-settings-chromium
 # nurunner-settings-thunderbird
 # nurunner-flattr-icons
 # nurunner-moka-icons
@@ -134,7 +140,13 @@ aspell-en
 gimp-help-en
 hunspell-en
 hyphen-en
+vim-spell-en
 inkscape
+htop
+vi
+vim
+iotop
+iftop
 ## End Nurunner adds
 
 
@@ -142,7 +154,7 @@ inkscape
 noto-fonts  # default font
 #noto-fonts-cjk  # big package, ~76 mb compressed
 noto-fonts-emoji
-ttf-oxygen  # used for monospaced
+
 cantarell-fonts
 
 ## Games
@@ -159,6 +171,8 @@ kmahjongg
 ## Package management
 octopi
 octopi-notifier-frameworks
+octopi-cachecleaner
+octopi-repoeditor
 
 ## Java
 jdk8-openjdk
@@ -231,28 +245,31 @@ perl-gtk2-trayicon
 
 ## KDE Applications
 ark
+digikam
 dolphin
 dolphin-plugins
+filelight
 icoutils
 k3b
 kate
 kamoso
 kcalc
-kdebase-kdepasswd
-kdebase-keditbookmarks
-kdebase-kfind
+#kdebase-kdepasswd
+keditbookmarks
+kfind
 kdeconnect
-kdegraphics-okular
+okular
 kdenetwork-filesharing
 kdenlive
 kde-servicemenus-rootactions
 khelpcenter
 kio-extras
+kleopatra
 konsole
 konversation
 ksystemlog
 kwalletmanager
-ksuperkey
+#ksuperkey
 marble
 gwenview
 print-manager
@@ -261,6 +278,8 @@ spectacle
 
 ## KDE PIM
 #akonadiconsole
+#akregator
+#blogilo
 #kaddressbook
 #kalarm
 #kmail
@@ -304,9 +323,14 @@ ruby  # installing new service menus with GHNS
 ## Optional dependencies for print-manager
 system-config-printer  # auto-detect the printer driver
 python-pysmbc          # SMB browser support 
+cups-pk-helper         # PolicyKit helper to configure cups with fine-grained privileges
+python-pysmbc          # SMB browser support
 
 ## Optional dependencies for okular
 poppler-data  # encoding data to display PDF documents containing CJK characters
+
+## Optional dependencies for kdeconnect
+sshfs  # remote filesystem browser
 
 ## Applications
 audacious
@@ -315,7 +339,7 @@ gimp
 handbrake
 imagewriter
 firefox-kde
-flashplugin
+##flashplugin
 grub-customizer
 manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier

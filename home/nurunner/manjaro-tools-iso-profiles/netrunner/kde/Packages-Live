@@ -10,6 +10,7 @@ calamares			# new GUI installer of manjaro
 #thus
 #thus-dev
 #gparted
+flashplugin                     
 
 ### Driver set for fast live-session bootup (optional)
 

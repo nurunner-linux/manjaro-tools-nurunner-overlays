@@ -47,14 +47,15 @@ pacman
 pciutils
 pcmciautils
 perl
-## procps-ng-classic
+procps-ng
 psmisc
 reiserfsprogs
 s-nail
 sed
 shadow
 sysfsutils
->openrc eudev-systemdcompat
+>openrc eudev-systemd
+>openrc libeudev-systemd
 >openrc netifrc
 >systemd systemd-sysvcompat
 tar
@@ -77,9 +78,9 @@ manjaro-firmware
 nurunner-release
 memtest86+
 mkinitcpio-nfs-utils
+mkinitcpio-openswap # needed to be in rootfs by Calamares LUKS support
 >multilib lib32-mesa  # Optional dependency for mhwd
 os-prober
-pkg-config
 sudo
 syslinux
 
@@ -88,7 +89,6 @@ lsof
 >openrc rsync-openrc
 >systemd rsync
 wget
-numlockx
 
 ## Compression utils
 lzop
@@ -146,4 +146,4 @@ zd1211-firmware
 >systemd tlp
 
 ## ucode for new cpus
-# intel-ucode
+intel-ucode
