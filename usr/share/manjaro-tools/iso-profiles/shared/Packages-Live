@@ -1,7 +1,12 @@
+calamares
+manjaro-live-skel
+>manjaro manjaro-syslinux-theme
+mkinitcpio-nfs-utils
+nbd
 >openrc manjaro-live-openrc
+>sonar sonar-calamares-branding
+>sonar sonar-syslinux-theme
+squashfs-tools
 >systemd manjaro-live-systemd
-manjaro-live-skel		# live skel
-#calamares			# new GUI installer of manjaro
-calamares-dev			# new GUI installer of manjaro - kpmcore
-#calamares-exp			# new GUI installer of manjaro - experimental version
-
+>x86_64 manjaro-efi-utils
+>sonar thus

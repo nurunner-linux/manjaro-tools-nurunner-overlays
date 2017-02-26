@@ -1,18 +1,18 @@
-## Base group minus netctl
+acpi
+b43-fwcutter
 bash
+btrfs-progs
 bzip2
 coreutils
->openrc cronie-openrc
->systemd cronie
->openrc cryptsetup-openrc
->systemd cryptsetup
->openrc dbus-openrc
->openrc device-mapper-openrc
->systemd device-mapper
->openrc dhcpcd-openrc
->systemd dhcpcd
+crda
+dhclient
 diffutils
+dmraid
+dnsmasq
+dosfstools
 e2fsprogs
+ecryptfs-utils
+>x86_64 efibootmgr
 exfat-utils
 f2fs-tools
 file
@@ -20,28 +20,54 @@ filesystem
 findutils
 gawk
 gcc-libs
->multilib gcc-libs-multilib
 gettext
 glibc
 grep
+grub
 gzip
 inetutils
+intel-ucode
 iproute2
+iptables
 iputils
+ipw2100-fw
+ipw2200-fw
 jfsutils
+KERNEL
 less
 licenses
+linux-firmware
 logrotate
->openrc lvm2-openrc
->systemd lvm2
+lsb-release
 man-db
-man-pages
+manjaro-firmware
+>manjaro manjaro-release
 manjaro-system
->openrc mdadm-openrc
->systemd mdadm
+man-pages
+memtest86+
 mhwd
 mhwd-db
+mkinitcpio-openswap
+>multilib gcc-libs-multilib
 nano
+ntfs-3g
+>openrc acpid-openrc
+>openrc cpupower-openrc
+>openrc cronie-openrc
+>openrc cryptsetup-openrc
+>openrc dbus-openrc
+>openrc device-mapper-openrc
+>openrc dhcpcd-openrc
+>openrc eudev-systemd
+>openrc haveged-openrc
+>openrc libeudev-systemd
+>openrc lvm2-openrc
+>openrc mdadm-openrc
+>openrc netifrc
+>openrc nfs-utils-openrc
+>openrc rsync-openrc
+>openrc wpa_supplicant-openrc
+os-prober
 pacman
 pciutils
 pcmciautils
@@ -49,102 +75,31 @@ perl
 procps-ng
 psmisc
 reiserfsprogs
-s-nail
 sed
 shadow
+s-nail
+>sonar sonar-release
+sudo
 sysfsutils
->openrc eudev-systemd
->openrc libeudev-systemd
->openrc netifrc
+>systemd acpid
+>systemd cpupower
+>systemd cronie
+>systemd cryptsetup
+>systemd device-mapper
+>systemd dhcpcd
+>systemd haveged
+>systemd lvm2
+>systemd mdadm
+>systemd nfs-utils
+>systemd rsync
 >systemd systemd-sysvcompat
+>systemd tlp
+>systemd wpa_supplicant
 tar
 texinfo
 usbutils
 util-linux
 which
 xfsprogs
-
-## Kernel
-KERNEL
-
-## Extra Base Packages
-grub
-linux-firmware
-lsb-release
->openrc haveged-openrc
->systemd haveged
-manjaro-firmware
-manjaro-release
-memtest86+
-mkinitcpio-nfs-utils
-mkinitcpio-openswap # needed to be in rootfs by Calamares LUKS support
->multilib lib32-mesa  # Optional dependency for mhwd
-os-prober
-pkg-config
-sudo
-syslinux
-
-## Misc applications
-lsof
->openrc rsync-openrc
->systemd rsync
-wget
-numlockx
-
-## Compression utils
-lzop
-unarj
-unrar
-unzip
-xz
-zip
-
-## Efi support (only x86_64)
->x86_64 efitools
->x86_64 refind-efi
-
-## Storage and filesystem
-btrfs-progs
-dmraid
-dosfstools
-ecryptfs-utils
->openrc hdparm-openrc
->systemd hdparm
-nilfs-utils
->openrc nfs-utils-openrc
->systemd nfs-utils
-ntfs-3g
-sdparm
-squashfs-tools
-smartmontools
-testdisk
-
-## Network
-b43-fwcutter
-crda
-dhclient
-dnsmasq
-ethtool
-iptables
-ipw2100-fw
-ipw2200-fw
-iw
-nbd
-KERNEL-ndiswrapper
-ndiswrapper-utils
-rp-pppoe
-usb_modeswitch
-wireless_tools
->openrc wpa_supplicant-openrc
->systemd wpa_supplicant
 zd1211-firmware
-
-## Power management
->openrc acpid-openrc
->systemd acpid
->openrc cpupower-openrc
->systemd cpupower
->systemd tlp
-
-## ucode for new cpus
-intel-ucode
+zsh

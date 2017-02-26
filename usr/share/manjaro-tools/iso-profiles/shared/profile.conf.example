@@ -8,13 +8,11 @@
 # use pxe
 # pxe_boot="true"
 
-################ torrent ################
+# use core packages as defined in pkglist to use in basic profile
+# basic="false"
 
-# the torrent tracker urls, comma separated
-# tracker_url='udp://mirror.strits.dk:6969'
-
-# Piece size, 2^n
-# piece_size=21
+# use extra packages as defined in pkglist to activate a full profile
+# extra="false"
 
 ################ install ################
 
@@ -38,16 +36,13 @@
 # netinstall="false"
 
 # the default url for the netinstall.yaml
-# netgroups="https://raw.githubusercontent.com/manjaro/manjaro-tools-iso-profiles/master/shared/netinstall"
+# netgroups="https://raw.githubusercontent.com/manjaro/calamares-netgroups/master"
 
-# configure calamares to use chrootcfg instead of unpackfs
+# configure calamares to use chrootcfg instead of unpackfs; default: unpackfs
 # chrootcfg="false"
 
 # use geoip
 # geoip="true"
-
-# unset defaults to given value
-# plymouth_theme=manjaro-elegant
 
 # unset defaults to given values
 # names must match systemd service names
@@ -56,11 +51,11 @@
 
 # unset defaults to given values,
 # names must match openrc service names
-# enable_openrc=('acpid' 'bluetooth' 'consolekit' 'cronie' 'cupsd' 'dbus' 'syslog-ng' 'NetworkManager')
+# enable_openrc=('acpid' 'bluetooth' 'cgmanager' 'consolekit' 'cronie' 'cupsd' 'dbus' 'syslog-ng' 'NetworkManager')
 # disable_openrc=()
 
 # unset defaults to given values
-# addgroups="video,power,disk,storage,optical,network,lp,scanner,wheel"
+# addgroups="video,power,storage,optical,network,lp,scanner,wheel"
 
 # the same workgroup name if samba is used
 # smb_workgroup="Manjaro"
@@ -75,6 +70,10 @@
 
 # unset defaults to given value
 # password="manjaro"
+
+# the login shell
+# defaults to bash
+# login_shell=/bin/bash
 
 # unset defaults to given values
 # names must match systemd service names

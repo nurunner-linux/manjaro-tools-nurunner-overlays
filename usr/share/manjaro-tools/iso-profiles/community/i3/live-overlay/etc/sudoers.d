@@ -1,1 +1,1 @@
-../../../../shared/manjaro/live-overlay/etc/sudoers.d
+../../../../shared/manjaro/live-overlay/etc/sudoers.d/
