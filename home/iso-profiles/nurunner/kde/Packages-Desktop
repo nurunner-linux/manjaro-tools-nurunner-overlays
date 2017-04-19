@@ -68,15 +68,16 @@ vi
 vim
 iotop
 iftop
+zsh-autosuggestions
+zsh-syntax-highlighting
 ## End Nurunner adds
 
 
 ## Network
 >systemd avahi
 >openrc avahi-openrc
->systemd networkmanager
+networkmanager
 >openrc networkmanager-openrc
->openrc networkmanager-consolekit
 networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
@@ -113,11 +114,9 @@ manjaro-pulse
 pavucontrol
 >extra phonon-qt4-gstreamer
 phonon-qt5-gstreamer
-
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
-qt-gstreamer
 
 ## Connect Packages
 android-tools
@@ -160,7 +159,7 @@ yaourt
 noto-fonts               # default font
 # noto-fonts-cjk         # big package, ~76 mb compressed
 >extra noto-fonts-emoji
->extra terminus-font
+terminus-font
 >extra ttf-bitstream-vera
 # ttf-dejavu             # Installed as gnome-themes-standard dependency
 # ttf-hack               # Installed as plasma-integration dependency
@@ -179,7 +178,6 @@ kmines
 kpatience
 kdegames-ksnakeduel
 kmahjongg
-
 
 ## Package management
 octopi
@@ -211,7 +209,7 @@ octopi-repoeditor
 
 ## Display manager
 >systemd sddm
->openrc sddm-consolekit
+>openrc sddm-elogind
 sddm-kcm
 
 ## Plasma5
@@ -235,7 +233,6 @@ plasma-desktop
 plasma-nm
 plasma-pa
 plasma-workspace
-##>extra plasma-workspace-wallpapers
 powerdevil
 systemsettings
 user-manager
@@ -251,17 +248,18 @@ gnome-themes-standard
 >extra oxygen
 >extra oxygen-kde4
 >extra oxygen-icons
-##plasma5-themes-breath 
+##plasma5-themes-breath  
 ##>extra plasma5-themes-maia
-sddm-breath-theme  
+##sddm-breath-theme  
 >extra sddm-maia-theme
 
 ## Better systray/notifications support
 >extra sni-qt  # A Qt plugin that enables tray icons in qt4 applications
-libappindicator-gtk2
-libappindicator-gtk3
-libappindicator-sharp
-perl-gtk2-trayicon
+libappindicator-gtk2 #
+libappindicator-gtk3 #
+libappindicator-sharp #
+perl-gtk2-trayicon #
+
 
 ## KDE Applications
 ark
@@ -269,7 +267,7 @@ ark
 dolphin
 dolphin-plugins
 >extra filelight
-icoutils
+icoutils # 
 >extra k3b
 kate
 kcalc
@@ -288,7 +286,6 @@ konsole
 konversation
 ksystemlog
 kwalletmanager
-##ksuperkey
 marble
 kwrite
 gwenview
@@ -297,12 +294,14 @@ partitionmanager
 >extra skanlite
 spectacle
 
-## KDE Telepathy
+
+## KDE Telepathy  # 
 telepathy-kde-meta
 telepathy-gabble
 telepathy-haze
 telepathy-idle
 telepathy-rakia
+
 
 ## Optional dependencies for ark
 p7zip  # 7Z format support
@@ -351,7 +350,6 @@ poppler-data  # encoding data to display PDF documents containing CJK characters
 >extra system-config-printer  # auto-detect the printer driver
 >extra python-pysmbc          # SMB browser support
 
-
 ## Applications
 audacious
 >extra cantata
@@ -399,12 +397,16 @@ yakuake
 xf86-input-elographics
 xf86-input-evdev
 xf86-input-keyboard
-xf86-input-libinput
+>systemd xf86-input-libinput
+>openrc xf86-input-libinput-nosystemd
 xf86-input-mouse
 xf86-input-void
 
 ## Xorg Server and Graphics
-xorg-server
+>systemd xdg-user-dirs
+>systemd xorg-server
+>openrc xdg-user-dirs-nosystemd
+>openrc xorg-server-nosystemd
 xorg-server-utils
 xorg-twm
 xorg-utils
@@ -414,20 +416,18 @@ mesa-demos
 
 ## Desktop Utils
 perl-file-mimeinfo
-xdg-user-dirs
 xdg-utils
 xdg-su
 
-## KDE Frameworks
 kmediaplayer
 kactivities
 
-# Partition
-partitionmanager
-
 ## Misc
->openrc consolekit-openrc
->openrc displaymanager-openrc
->openrc pm-utils
->openrc cgmanager-openrc
 manjaro-hotfixes
+>openrc elogind-openrc
+>openrc openrc-settingsd
+>openrc displaymanager-openrc
+>openrc accountsservice-elogind
+>openrc upower-nosystemd
+>openrc udisks2-elogind
+
